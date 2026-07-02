@@ -1,0 +1,4 @@
+customtkinter
+openpyxl
+reportlab
+pillow
