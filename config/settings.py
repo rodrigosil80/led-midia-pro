@@ -1,0 +1,9 @@
+APP_NAME = "LED Mídia Pro"
+
+VERSION = "2.0.0"
+
+AUTHOR = "Rodrigo Garcia"
+
+WINDOW_WIDTH = 1400
+
+WINDOW_HEIGHT = 800
