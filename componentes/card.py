@@ -1,5 +1,4 @@
 import customtkinter as ctk
-
 from config.theme import *
 
 class Card(ctk.CTkFrame):
@@ -44,5 +43,7 @@ class Card(ctk.CTkFrame):
 )      
 
               self.label_valor.pack(
-                     pady=(0,15)
-)
+                     pady=(0,15,)
+                     
+                     
+       )
