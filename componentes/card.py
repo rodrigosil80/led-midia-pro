@@ -7,12 +7,18 @@ class Card(ctk.CTkFrame):
 
               super().__init__(master)
 
+              self.configure(
+                width=CARD_WIDTH,
+                height=CARD_HEIGHT,
+                corner_radius=CARD_RADIUS,
+                fg_color=CARD
+        )
+
+              self.pack_propagate(False)
+
               self.icone = icone
-
               self.titulo = titulo
-
               self.valor = valor
-        
               self.label_titulo = ctk.CTkLabel(
 
                      self,

@@ -42,3 +42,10 @@ TEXT_FONT = (FONT, 14)
 BUTTON_FONT = (FONT, 15, "bold")
 
 
+# ==========================
+# CARDS
+# ==========================
+
+CARD_WIDTH = 280
+CARD_HEIGHT = 140
+CARD_RADIUS = 12

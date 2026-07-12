@@ -7,6 +7,7 @@ class Dashboard(ctk.CTkFrame):
         def __init__(self, master):
 
             super().__init__(master)
+            
 
             self.criar_layout()        
 
@@ -32,9 +33,9 @@ class Dashboard(ctk.CTkFrame):
     )
 
             self.cards_frame.pack(
-            fill="x",
             padx=10,
             pady=10
+            
     )
 
 
