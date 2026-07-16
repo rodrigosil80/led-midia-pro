@@ -12,6 +12,7 @@ class Dashboard(ctk.CTkFrame):
             self.criar_layout()        
 
         def criar_layout(self):
+            
 
     # =========================
     # TÍTULO DO DASHBOARD
@@ -93,3 +94,14 @@ class Dashboard(ctk.CTkFrame):
             pady=20,
             padx=20
     )
+            
+            def criar_card(self, icone, titulo, valor):
+
+                card = Card(
+                    
+                self.cards_frame,
+                icone = icone,
+                titulo = titulo,
+                valor = valor
+
+                )
