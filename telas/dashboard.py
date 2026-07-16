@@ -43,65 +43,43 @@ class Dashboard(ctk.CTkFrame):
     # =========================
     # CARD CLIENTES
     # =========================
-            self.card_clientes = Card(
-            self.cards_frame,
-            icone="👥",
-            titulo="Clientes",
-            valor="25"
+                      
+            self.criar_card(
+            "👥",
+            "Clientes",
+            "25"
+)
+                       
+            self.criar_card(
+           "📺",
+           "Anúcios",
+           "18"
+)    
+           
+            self.criar_card(
+            "💰",
+            "Receitas",
+            "100"
+        )    
+            
+            self.criar_card(
+           "💰",
+           "Exibições",
+           "1000"
         )    
 
-            self.card_clientes.pack(
-            side="left",
-            pady=20,
-            padx=20
-    )
-            
-            self.card_anuncios = Card(
-            self.cards_frame,
-            icone="📺",
-            titulo="Anúcios",
-            valor="18"
-        )    
-
-            self.card_anuncios.pack(
-            side="left",
-            pady=20,
-            padx=20
-    )
-            
-            self.card_receitas = Card(
-            self.cards_frame,
-            icone="💰",
-            titulo="Receitas",
-            valor="100"
-        )    
-
-            self.card_receitas.pack(
-            side="left",
-            pady=20,
-            padx=20
-    )
-            
-            self.card_exibicoes = Card(
-            self.cards_frame,
-            icone="💰",
-            titulo="Exibições",
-            valor="1000"
-        )    
-
-            self.card_exibicoes.pack(
-            side="left",
-            pady=20,
-            padx=20
-    )
-            
-            def criar_card(self, icone, titulo, valor):
+                     
+        def criar_card(self, icone, titulo, valor):
 
                 card = Card(
-                    
                 self.cards_frame,
-                icone = icone,
-                titulo = titulo,
-                valor = valor
+                icone=icone,
+                titulo=titulo,
+                valor=valor
+)
 
-                )
+                card.pack(
+                side="left",
+                padx=20,
+                pady=20
+)
